@@ -10,9 +10,26 @@
 </head>
 <body>
     <nav>
+        <section>
+
+    
         <a href="">manos</a>
         <a href="">Manas</a>
         <a href="">monstros</a>
     </nav>
+    {% for vilao in viloes %}
+    <div class="card"></div>
+
+    <div>
+        <div>
+            <img src="{{vilao.foto.url}}" alt="">
+        </div>
+        <h2>{{vilao.nome}}</h2>
+        <p>habilidade: {{vilao.habilidade}}</p>
+        <p>Números de mortes:{{vilao.mortes}}</p>
+        <p>arma: {{vilao.armas}}</p>
+    </div>
+    {% endfor %}
+</section>
 </body>
 </html>
